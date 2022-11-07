@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 2: Responsive Design</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .smooth {
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      ::selection {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-50 font-sans leading-normal tracking-normal">
+    <!--Nav-->
+    <nav class="bg-gray-800 p-4 mt-0 w-full">
+      <div class="container mx-auto flex items-center">
+        <div class="flex text-white font-extrabold">
+          <a
+            class="flex text-white text-base no-underline hover:text-white hover:no-underline"
+            href="#"
+          >
+            🛫
+            <span class="hidden w-0 md:w-auto md:block pl-1"
+              >Iterative Design</span
+            >
+          </a>
+        </div>
+        <div class="flex pl-4 text-sm">
+          <ul
+            class="list-reset flex justify-between flex-1 md:flex-none items-center"
+          >
+            <li class="mr-2">
+              <a
+                class="inline-block py-2 px-2 text-white no-underline"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
+                href="#section1"
+                >Part1</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
+                href="#section2"
+                >Part2</a
+              >
+            </li>
+            <li class="mr-2">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-2"
+                href="#section3"
+                >Part3</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--slide in nav-->
+    <div
+      id="header"
+      class="bg-white fixed w-full z-10 top-0 hidden animated"
+      style="opacity: 0.95"
+    >
+      <div class="bg-white">
+        <div class="flex flex-wrap items-center content-center">
+          <div class="flex w-1/2 justify-start text-white font-extrabold">
+            <a
+              class="flex text-gray-900 no-underline hover:text-gray-900 hover:no-underline pl-2"
+              href="#"
+            >
+              ✈️
+              <span class="hidden w-0 md:w-auto md:block pl-1"
+                >Iterative Design</span
+              >
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <!--Progress bar-->
+      <div
+        id="progress"
+        class="h-1 bg-white shadow"
+        style="
+          background: linear-gradient(
+            to right,
+            #669afa var(--scroll),
+            transparent 0
+          );
+        "
+      ></div>
+    </div>
+
+    <!--Title-->
+    <div class="text-center pt-16 md:pt-32">
+      <h1 class="font-bold break-normal text-4xl md:text-5xl">
+        Assignment 3: Iterative Design
+      </h1>
+	  <h1 class="py-2 break-normal text-2xl md:text-3xl">
+        <a
+			class="text-blue-700 hover:text-blue-800 no-underline text-2xl font-bold"
+			href="https://www.figma.com/file/778BoUNWk3eF51pGPrQzEz/Airhart-Aeronautics?node-id=0%3A1"
+		>
+		LINK TO FIGMA
+		</a>
+      </h1>
+	  <h1 class="py-2 break-normal text-2xl md:text-3xl">
+        <a
+			class="text-blue-700 hover:text-blue-800 no-underline text-2xl font-bold"
+			href="https://www.airhartaero.com/"
+		>
+    ORIGINAL AIRHART WEBSITE
+		</a>
+      </h1>
+	  <!-- <h1 class="py-2 break-normal text-2xl md:text-3xl">
+        <a
+			class="text-green-400 hover:text-green-500 no-underline text-2xl font-bold"
+			href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		>
+		👉SPECIAL PAGE FOR YOU
+		</a>
+      </h1> -->
+    </div>
+
+    <!--image-->
+    <div
+      class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
+      style="background-image: url('back.png'); height: 75vh"
+    ></div>
+
+    <!--Container-->
+    <div class="container max-w-5xl mx-auto -mt-32 bg-blue-50">
+      <div class="mx-0 sm:mx-6">
+        <div
+          class="bg-blue-50 w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal"
+          style="font-family: Georgia, serif"
+        >
+          <!--Post Content-->
+
+          <!--Lead Para-->
+          <p class="text-2xl md:text-3xl mb-5 font-bold">
+            👋 Hi there!! The Iterative Design assignment aims to let us experience the full process of mocking up a solution to the concept of a startup. Ultimately, we decided to choose Airhart Aeronatics. From creating our initial sketches, to low-fidelity Balsamiq, to many iterations of high-fidelity Figma’s, we’ve learned many user interface and user experience tools that help guide shaping the best and most accessible website.
+          </p>
+
+          <h1 id="section1" class="text-center text-4xl font-bold text-blue-800">Part 1: Sketching and Wireframing</h1>
+
+          <p class="py-4">
+            <h2 class="text-3xl text-blue-800 pb-4">Pre-Design Thinking</h2>
+            The startup we chose is <a
+            class="text-gray-800 hover:text-blue-500 no-underline border-b-2 border-blue-500"
+            href="https://www.ycombinator.com/companies/airhart-aeronautics"
+            >Airhart Aeronautics</a>, a company that aims to let anyone fly a semi-autonomous airplane, making transportation via flying as easy as transportation via driving. We are designing a desktop-website interface, which will mainly impact any individual who has the mental and physical ability to control a vehicle. These users would be impacted as the aim to provide airplane transportation to be an alternative to (or entirely replace) driving will impact those who already drive. This may change in the future if the techniques to flying precede that of driving.
+          </p>
+           <h2 class="text-3xl py-4 text-blue-800">Sketching</h2>
+
+          <img class="py-6" src="sketch1.png" alt="sketch 1" />
+          <div class="flex py=4">
+            <img class="w-6/12" src="sketch2-0.png" alt="sketch 2" />
+            <img class="w-6/12" src="sketch2-1.png" alt="sketch 2" />
+          </div>
+          <img class="py-6" src="sketch3.png" alt="sketch 3" />
+
+          <!-- TODO: ADD CAL'S SKETCHES -->
+
+          <h2 class="text-3xl text-blue-800 pb-4">Combining ideas into a Wireframe</h2>
+          <p>
+          Here are the relevant design decisions that led to the following wireframe (re. if the sketches demonstrate effective solutions to the company goals, and if they are diverse and creative):
+          <ul class="list-disc pl-6 py-4">
+            <li class="py-2"> <span class="font-bold">Effectiveness</span>: The company’s goal is to be able to make and provide planes that would allow 10x more people to be able to fly. Our sketches would be a platform in solving the problem: extending components from each sketch, we’re able to let users browse a catalog of available airplanes and experience a smooth checkout process with valid technical qualifications (a license). </li>
+            <li class="py-2"> <span class="font-bold">Diversity</span>: They are diverse— the first sketch includes the user experience of navigating from the home page, to the catalog, to the profile of each plane. The second sketch proposes a subscription service and finding nearby airplanes. The third sketch includes an about page as well as a get involved page. The last sketch proposes a more in-depth about page as well as a reservation service for the rental service. </li>
+          </ul>
+          </p>
+
+          <div class="flex">
+            <div class="py-6 w-6/12">
+              <img src="home.png" alt="home" />
+              <h1 class="text-center">Home</h1>
+            </div>
+            <div class="py-6 w-6/12">
+              <img src="nearme.png" alt="near me" />
+              <h1 class="text-center">Planes Near Me</h1>
+            </div>
+            
+          </div>
+
+          <div class="flex">
+            <div class="py-6 w-6/12">
+              <img src="plane.png" alt="plane profile" />
+              <h1 class="text-center">Plane Profile</h1>
+            </div>
+
+            <div class="py-6 w-6/12">
+              <img src="user.png" alt="user profile" />
+              <h1 class="text-center">User Profile</h1>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="py-6 w-6/12">
+              <img src="contact.png" alt="Contact Us" />
+              <h1 class="text-center">Contact Us</h1>
+            </div>
+            <div class="py-6 w-6/12">
+              <img src="aboutus.png" alt="about us" />
+              <h1 class="text-center">About Us</h1>
+            </div>
+          </div>
+
+          <!-- <div class="flex">
+            <div class="py-6 w-6/12">
+              <img src="contact.png" alt="Contact Us" />
+              <h1 class="text-center">Contact Us</h1>
+            </div>
+            <div class="py-6 w-6/12">
+              <img src="aboutus.png" alt="about us" />
+              <h1 class="text-center">About Us</h1>
+            </div>
+          </div> -->
+
+          <h1 id="section2" class="py-6 text-center text-4xl font-bold text-blue-800">Part 2: Mockups</h1>
+          <h2 class="text-3xl text-blue-800 py-4">Interactive High-Fidelity Mockup</h2>
+          <p><a class="text-gray-800 hover:text-blue-500 no-underline border-b-2 border-blue-500" href="https://www.figma.com/file/778BoUNWk3eF51pGPrQzEz/Airhart-Aeronautics?node-id=0%3A1">Here</a> is the link to our high-fidelity mockup after fixing the issues found during the studio (problems before this final version are listed below!)</p>
+          <h2 class="text-3xl text-blue-800 py-4">Mockup Crit in Studio</h2>
+          <p>After receiving all of our critiques from the studio, here is a summary of all the feedback we received:</p>
+          <ul class="list-disc pl-6 py-4">
+            <li class="py-2"> For the plane profile page, the critiques were mainly about having a “back” option and have a more specific scope than just the “available” button (e.g. have ranges of time that are available, similar to Zipcar). </li>
+            <li class="py-2"> For our catalog, critics wanted more information, such as availability, name, and a “see details” rather than a large block of text. </li>
+            <li class="py-2"> For the about us and contact us pages, critics wanted the pages to be more cohesive with the rest of the website aesthetics-wise. </li>
+            <li class="py-2"> For our user profile page, critics wanted the background design to be less distracting and perhaps more transparent, or compartmentalize information / have more contrasting colors. </li>
+          </ul>
+            
+
+
+
+      <h1 id="section3" class="text-center text-4xl font-bold text-blue-800">Part 3: User Testing</h1>
+
+      <h2 class="text-3xl text-blue-800 py-4">Determine a Task</h2>
+      <p> Here is the overarching task for the users: You're going on a trip with your friends and you want to rent an airplane. After clicking through the website, please find information about the HondaJet. </p>
+      <p> The steps to take to get to the HondaJet page are from the home page, click on "catalog", then navigate to "see details" for the HondaJet.</p>
+
+
+      <h2 class="text-3xl text-blue-800 py-4">Testing Instructions & UserTesting.com</h2>
+
+      <p> The intermediate tasks we asked the users to perform are listed below:</p>
+      <ol class="list-decimal pl-6 py-4">
+        <li class="py-2"> Take as much time as you need to explore this website. Move on to the next task when you're ready. </li>
+        <li class="py-2"> Navigate yourself to the catalog page. How intuitive was it to get to this page? Are the contents of this page aligned with your mental model of a plane rental website? Are there elements that are unnecessary, or missing? [5-point rating scale: Very difficult to Very easy] </li>
+        <li class="py-2">Find the HondaJet page via the catalog page. Is there anything you'd wish to know before booking a plane that is not provided? Is there information that you would consider unnecessary that is on the webpage? [5-point rating scale: Very difficult to Very easy]  </li>
+      </ol>
+
+      <p> The post-experience questions are listed below: </p>
+      <ol class="list-decimal pl-6 py-4">
+        <li class="py-2"> What frustrated you most about this site? </li>
+        <li class="py-2"> If you had a magic wand, how would you improve this site? </li>
+        <li class="py-2"> What did you like about the site? </li>
+        <li class="py-2"> How likely are you to recommend this site to a friend or colleague (0=Not at all likely, and 10=Very likely)? </li>
+      </ol>
+
+
+      <h2 class="text-3xl text-blue-800 py-4">Analysis of Results</h2>
+
+      <p class="pb-4"> For task one, all users said it was intuitive to get to the HondaJet page; they liked the interactive elements as well as the features/colors that guide them to each page. </p>
+      <p class="pb-4"> For task two, we wanted them to review the catalog page. All had positive comments: it was easy, intuitive, and the information displayed were all important. However, two users wished there was location of the plane, as well as a reasoning behind the initial organization of the page before filtering. </p>
+      <p class="pb-4"> For task three, we wanted the critics to review the profile page for the HondaJet. The biggest issue that the users caught was that we did not include price and capacity on this page, even tough it was in the catalog. </p>
+      <p class="pb-4"> Overall, the users had an easy time navigating to each page and thought it was easy and intuitive. They made no errors on each task. The changes we’d make are to incorporate more information on the profile page, and make it scrollable rather than a static, one-page profile. </p>
+
+      <p class="py-4"> As for the post-experience questionnaire, the only qualm that one mentioned was that she wished there was a chatbot feature somewhere on the page that would make getting help more accessible. Otherwise, all three users said the website was intuitive, easy, and overall a good experience!</p>
+
+		  <p class="py-4 text-2xl md:text-3xl mb-5 font-bold text-blue-800">
+            Thank you for checking out our project!
+      </p>
+
+          <!--/ Post Content-->
+        </div>
+
+
+		<script>
+			/* Progress bar */
+			//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+			var h = document.documentElement,
+			b = document.body,
+			st = "scrollTop",
+			sh = "scrollHeight",
+			progress = document.querySelector("#progress"),
+			scroll;
+			var scrollpos = window.scrollY;
+			var header = document.getElementById("header");
+
+			document.addEventListener("scroll", function () {
+			/*Refresh scroll % width*/
+			scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+			progress.style.setProperty("--scroll", scroll + "%");
+
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 100) {
+				header.classList.remove("hidden");
+				header.classList.remove("fadeOutUp");
+				header.classList.add("slideInDown");
+			} else {
+				header.classList.remove("slideInDown");
+				header.classList.add("fadeOutUp");
+				header.classList.add("hidden");
+			}
+			});
+		</script>
+  	</body>
+</html>
